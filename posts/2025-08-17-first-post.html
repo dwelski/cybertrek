@@ -43,10 +43,7 @@
       gap: 1rem;
       margin: 1.5rem 0;
     }
-    .gallery img {
-      margin: 0;
-      border-radius: 8px;
-    }
+    .gallery img { margin: 0; }
     footer {
       background: #161b22;
       padding: 1rem;
@@ -55,10 +52,7 @@
       color: #8b949e;
       margin-top: 3rem;
     }
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
+    a { color: #58a6ff; text-decoration: none; }
     blockquote {
       border-left: 4px solid #58a6ff;
       padding-left: 1rem;
@@ -82,8 +76,8 @@
 
     <p>Let’s start in the woods of the Borscht Belt:</p>
 
-    <!-- Replace with your real file name inside assets/ -->
-    <img src="assets/summer-camp.png" alt="Summer camp scene" loading="lazy">
+    <!-- Put your file in assets and use its exact name -->
+    <img src="./assets/summer-camp.png" alt="Summer camp scene" loading="lazy" onerror="this.style.display='none'">
 
     <p>
       I remember "hunting" for salamanders (aggressive terminology, but no salamanders were harmed)
@@ -94,8 +88,8 @@
 
     <blockquote>We meant well, but we were experimenting in the dark.</blockquote>
 
-    <!-- Another example file inside assets/ -->
-    <img src="assets/salamander-memory.png" alt="Handmade terrarium with salamander" loading="lazy">
+    <!-- Another optional image -->
+    <img src="./assets/salamander-memory.png" alt="Handmade terrarium with salamander" loading="lazy" onerror="this.style.display='none'">
 
     <p>
       That memory reminds me of how we approach AI systems today. We build large-scale LLMs, agents,
@@ -123,8 +117,8 @@
       and not when it’s too late (right of boom).
     </blockquote>
 
-    <!-- LLM risk image -->
-    <img src="assets/llm-risk-illustration.png" alt="Illustration of LLM risks" loading="lazy">
+    <!-- Optional risk illustration -->
+    <img src="./assets/llm-risk-illustration.png" alt="Illustration of LLM risks" loading="lazy" onerror="this.style.display='none'">
 
     <p>
       Many threats feel new. Take the jailbreak prompts eliciting restricted content, but LLMs are still cloud-native systems.
@@ -133,8 +127,8 @@
       (for example OWASP Top 10 Web Apps vs. OWASP Top 10 for LLMs).
     </p>
 
-    <!-- Landscape image -->
-    <img src="assets/ai-threat-landscape.jpg" alt="AI threat landscape collage" loading="lazy">
+    <!-- Optional landscape -->
+    <img src="./assets/ai-threat-landscape.jpg" alt="AI threat landscape collage" loading="lazy" onerror="this.style.display='none'">
 
     <p>
       This isn’t just about edge cases or FUD. It’s about what happens when AI systems become embedded in our infrastructure,
@@ -150,23 +144,23 @@
 
     <h3>Diagrams</h3>
     <div class="gallery">
-      <img src="assets/diagram_v1.png" alt="Diagram v1" loading="lazy">
-      <img src="assets/diagram_v2.png" alt="Diagram v2" loading="lazy">
-      <img src="assets/diagram_v3.png" alt="Diagram v3" loading="lazy">
-      <img src="assets/diagram_v4.png" alt="Diagram v4" loading="lazy">
-      <img src="assets/diagram_v5.png" alt="Diagram v5" loading="lazy">
+      <img src="./assets/diagram_v1.png" alt="Diagram v1" loading="lazy">
+      <img src="./assets/diagram_v2.png" alt="Diagram v2" loading="lazy">
+      <img src="./assets/diagram_v3.png" alt="Diagram v3" loading="lazy">
+      <img src="./assets/diagram_v4.png" alt="Diagram v4" loading="lazy">
+      <img src="./assets/diagram_v5.png" alt="Diagram v5" loading="lazy">
     </div>
 
     <h2>About Me</h2>
     <p>
       Hi! My name is <strong>Derek Welski</strong>. I’m passionate about building safer, more accountable AI systems
-      by connecting emerging technology with the “human” layer of AI security and AI governance.
+      by connecting emerging technology with the human layer of AI security and AI governance.
       My career has taken me from field research in Kosovo to ad tech, and I hope that this broad perspective
       makes my content more relatable and accessible.
     </p>
 
-    <!-- About image -->
-    <img src="assets/about-derek.png" alt="Derek Welski" loading="lazy">
+    <!-- Optional about image -->
+    <img src="./assets/about-derek.png" alt="Derek Welski" loading="lazy" onerror="this.style.display='none'">
   </main>
 
   <footer>

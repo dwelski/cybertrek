@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CyberTrek</title>
+  <!-- Use project-absolute base for GitHub Pages -->
+  <base href="/cybertrek/">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -46,6 +48,31 @@
     a:hover {
       text-decoration: underline;
     }
+    .post-list {
+      list-style: none;
+      padding: 0;
+    }
+    .post-list li {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: #161b22;
+      border-radius: 8px;
+      border-left: 4px solid #58a6ff;
+    }
+    .post-date {
+      color: #8b949e;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .post-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .post-excerpt {
+      color: #9da5b4;
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
@@ -53,23 +80,38 @@
     <h1>🚀 CyberTrek</h1>
     <p>Your guide through the wild terrain of AI threats, vulnerabilities, and harms</p>
   </header>
-
   <main>
     <h2>Welcome</h2>
     <p>
       Welcome to <strong>CyberTrek</strong>, a blog exploring AI security, vulnerabilities, and the risks
-      that emerge when technology races ahead of safeguards. Here I’ll share thoughts, stories, and lessons
+      that emerge when technology races ahead of safeguards. Here I'll share thoughts, stories, and lessons
       from the fast-moving world of artificial intelligence and cybersecurity.
     </p>
-
+    
     <h2>Latest Posts</h2>
-    <ul>
-      <li><a href="posts/2025-08-17-first-post.html">AI Threats, Vulnerabilities, and Harms</a></li>
+    <ul class="post-list">
+      <li>
+        <div class="post-date">August 17, 2025</div>
+        <div class="post-title">
+          <a href="posts/2025-08-17-first-post.html">AI Threats, Vulnerabilities, and Harms</a>
+        </div>
+        <div class="post-excerpt">
+          I'm a mostly reformed AI doomer trying to keep up with the breakneck pace of innovation and share what I uncover along the way, especially where security still lags behind capability...
+        </div>
+      </li>
     </ul>
-
+    
     <h2>About Me</h2>
     <p>
-      Hi! My name is <strong>Derek Welski</strong>. I’m passionate about building safer, more accountable AI systems by bridging
+      Hi! My name is <strong>Derek Welski</strong>. I'm passionate about building safer, more accountable AI systems by bridging
       the gap between emerging technology, security, and governance. My career has taken me from field research in Kosovo 
       to the fast-paced world of ad tech, and now into cybersecurity. I write CyberTrek to make AI risks and defenses 
-      more understandable, relatable, and actionable for engineers,
+      more understandable, relatable, and actionable for engineers, security leaders, and CTOs.
+    </p>
+  </main>
+  
+  <footer>
+    <p>© 2025 CyberTrek | Built with <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+  </footer>
+</body>
+</html>

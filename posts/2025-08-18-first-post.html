@@ -1,94 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CyberTrek</title>
-  <style>
-    :root{
-      --bg:#0d1117; --bg2:#161b22; --text:#c9d1d9; --muted:#9da5b4; --link:#58a6ff;
-      --column:720px;          /* page text width */
-      --img-narrow:520px;      /* small figures (like terrarium) */
-      --img-medium:560px;      /* mid figures (line art, posters) */
-      --img-wide:640px;        /* wider figures (landscapes, signs) */
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-    header{background:var(--bg2);padding:2rem 1rem;text-align:left}
-    header h1{margin:0 auto;max-width:var(--column);font-size:2rem;color:var(--text);letter-spacing:.5px}
-    main{padding:2rem 1rem;max-width:var(--column);margin:0 auto}
-    h2,h3{color:#58a6ff;margin:1.5rem 0 .75rem}
-    p{margin:.8rem 0}
-    a{color:var(--link);text-decoration:none}
-    blockquote{border-left:4px solid var(--link);padding-left:1rem;color:var(--muted);font-style:italic;margin:1rem 0}
-    /* Figure helpers */
-    figure{margin:1.25rem auto 1.5rem;display:flex;flex-direction:column;align-items:center}
-    figure img{display:block;width:100%;height:auto;border-radius:8px}
-    figcaption{margin-top:.5rem;color:var(--muted);font-size:.9rem;text-align:center}
-    .narrow{max-width:var(--img-narrow)}
-    .medium{max-width:var(--img-medium)}
-    .wide{max-width:var(--img-wide)}
-    footer{background:var(--bg2);padding:1rem;text-align:center;font-size:.9rem;color:#8b949e;margin-top:3rem}
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CyberTrek</title>
+    <!-- Use project-absolute base for GitHub Pages -->
+    <base href="/cybertrek/">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        header {
+            background: #161b22;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #58a6ff;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2, h3 {
+            color: #58a6ff;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .gallery img {
+            margin: 0;
+        }
+        footer {
+            background: #161b22;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8b949e;
+            margin-top: 3rem;
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        blockquote {
+            border-left: 4px solid #58a6ff;
+            padding-left: 1rem;
+            color: #9da5b4;
+            font-style: italic;
+        }
+        /* Add error styling for broken images */
+        img.error {
+            display: none;
+        }
+        /* Placeholder for missing images */
+        .image-placeholder {
+            background: #21262d;
+            border: 2px dashed #58a6ff;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            color: #8b949e;
+            margin: 1.5rem auto;
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>V2</h1>
-  </header>
+    <header>
+        <h1>🚀 CyberTrek</h1>
+        <p>Your guide through the wild terrain of AI threats, vulnerabilities, and harms</p>
+    </header>
 
-  <main>
-    <p><strong>Welcome to <em>CyberTrek</em></strong>, your guide through the wild terrain of AI threats, vulnerabilities, and harms.</p>
-    <p>I’m a mostly reformed AI doomer trying to keep up with the breakneck pace of innovation and share what I uncover along the way, especially where security still lags behind capability.</p>
+    <main>
+        <h2>Welcome to CyberTrek</h2>
+        <p>
+            I'm a mostly reformed AI doomer trying to keep up with the breakneck pace of innovation and share what I uncover along the way, especially where security still lags behind capability.
+        </p>
+        
+        <p>Let's start in the woods of the Borscht Belt:</p>
+        
+        <img src="assets/summer-camp.png" alt="Summer camp scene" loading="lazy" 
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+        <div class="image-placeholder" style="display:none;">
+            📸 Summer camp scene image
+        </div>
+        
+        <p>
+            I remember "hunting" for salamanders, aggressive terminology but no salamanders were harmed, at summer camp just after a heavy rain, flipping over logs to catch that sudden flash of bright orange nestled in the moss or leaves. We cobbled together terrariums from whatever we could find without really knowing what the salamanders needed to survive.
+        </p>
+        
+        <blockquote>We meant well, but we were experimenting in the dark.</blockquote>
+        
+        <img src="assets/salamander-memory.png" alt="Handmade terrarium with salamander" loading="lazy" 
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+        <div class="image-placeholder" style="display:none;">
+            📸 Handmade terrarium with salamander
+        </div>
+        
+        <p>
+            That memory reminds me of how we approach AI systems today. We build large scale LLMs, agents, and recommendation engines with major real world impact, then race to bolt on security after deployment.
+        </p>
+        
+        <p>
+            Take LLMs. We often focus on social or economic risks, but the technical attack surface is just as urgent. Trends like vibe coding, no code agents, and plug and play model deployment lower the barrier to entry and raise the stakes.
+        </p>
+        
+        <p>
+            GenAI is already in use, whether or not teams realize it. From CRM to productivity copilots and third party SaaS platforms, AI is woven into daily operations.
+        </p>
+        
+        <p>
+            When these tools fall into the wrong hands, or even well meaning hands without guardrails, the risks multiply. Misuse, misconfigurations, and adversarial manipulation can escalate fast.
+        </p>
+        
+        <blockquote>
+            Raising awareness among engineering teams, security leaders, and CTOs matters now, left of boom, not when it is too late, right of boom.
+        </blockquote>
+        
+        <img src="assets/llm-risk-illustration.png" alt="Illustration of LLM risks" loading="lazy" 
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+        <div class="image-placeholder" style="display:none;">
+            📸 LLM risks illustration
+        </div>
+        
+        <p>
+            Many threats feel new, like jailbreak prompts eliciting restricted content, yet LLMs are still cloud native systems. They suffer from the same flaws, poor input validation, weak access controls, insecure dependencies. Often this is new tech wrapped in familiar vulnerabilities, for example OWASP Top 10 Web Apps compared with OWASP Top 10 for LLMs.
+        </p>
+        
+        <img src="assets/ai-threat-landscape.jpg" alt="AI threat landscape collage" loading="lazy" 
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+        <div class="image-placeholder" style="display:none;">
+            📸 AI threat landscape collage
+        </div>
+        
+        <p>
+            This is not just about edge cases or FUD. It is about what happens when AI systems become embedded in our infrastructure, our decisions, and our culture before we fully understand how to secure them.
+        </p>
+        
+        <p>Thanks for reading, and happy trekking.</p>
+        
+        <p><em>
+            This is the first in a series on AI threat modeling, security tradeoffs, and the terrain ahead. Let's navigate it together, logs, moss, hallucinations, and all.
+        </em></p>
+        
 
-    <p>Let’s start in the woods of the Borscht Belt:</p>
-
-    <!-- Poster-style photo -->
-    <figure class="wide">
-      <img src="https://dwelski.github.io/cybertrek/assets/summer-camp.png" alt="Welcome sign at summer camp">
-    </figure>
-
-    <p>I remember "hunting" for salamanders (aggressive terminology, but no salamanders were harmed) at summer camp, just after a heavy rain; flipping over logs to catch that sudden flash of bright orange nestled in the moss or leaves. We cobbled together terrariums from whatever we could find without really knowing what the salamanders needed to survive.</p>
-
-    <p>We meant well, but we were experimenting in the dark.</p>
-
-    <!-- Terrarium photo -->
-    <figure class="narrow">
-      <img src="https://dwelski.github.io/cybertrek/assets/salamander-memory.png" alt="Small terrarium with salamander">
-    </figure>
-
-    <p>That memory reminds me of how we approach AI systems today. We build large scale LLMs, agents, and recommendation engines with major real world impact, then race to bolt on security after deployment.</p>
-    <p>Take LLMs. We often focus on social or economic risks, but the technical attack surface is just as urgent. Trends like vibe coding, no code agents, and plug and play model deployment lower the barrier to entry and raise the stakes.</p>
-    <p>The reality is GenAI is already in use, whether or not teams realize it. From CRM to productivity co-pilots and third party SaaS platforms, AI is being woven into daily operations.</p>
-    <p>And when these tools fall into the wrong hands, or even well meaning hands without guardrails, the risks multiply. Misuse, misconfigurations, and adversarial manipulation can escalate fast.</p>
-
-    <!-- Line-art "AI deployment" -->
-    <figure class="medium">
-      <img src="https://dwelski.github.io/cybertrek/assets/llm-risk-illustration.png" alt="AI deployment line art with CVE callout">
-    </figure>
-
-    <p>Many threats feel new. Take the jailbreak prompts eliciting restricted content, yet LLMs are still cloud native systems. They suffer from the same old flaws: poor input validation, weak access controls, insecure dependencies. In some cases, this is just new tech wrapped in familiar vulnerabilities, for example OWASP Top 10 Web Apps versus OWASP Top 10 for LLMs.</p>
-
-    <!-- Robot poster -->
-    <figure class="medium">
-      <img src="https://dwelski.github.io/cybertrek/assets/ai-threat-landscape.jpg" alt="Robot poster about ignoring security policy">
-    </figure>
-
-    <p>This is not just about edge cases or FUD. It is about what happens when AI systems become embedded in our infrastructure, our decisions, and our culture before we fully understand how to secure them.</p>
-
-    <p>Thanks for reading, and happy trekking.</p>
-    <p><em>This is the first in a series on AI threat modeling, security tradeoffs, and the terrain ahead. Let’s navigate it together: logs, moss, hallucinations, and all.</em></p>
-
-    <h3>About me</h3>
-    <p>Hi. My name is <strong>Derek Welski</strong>. I am passionate about building safer, more accountable AI systems by connecting emerging technology with the human layer of AI security and AI governance. My career has taken me from field research in Kosovo to ad tech, and I hope that this broad perspective makes my content more relatable and accessible.</p>
-
-    <!-- Personal photo -->
-    <figure class="wide">
-      <img src="https://dwelski.github.io/cybertrek/assets/about-derek.png" alt="Derek outdoors">
-    </figure>
-  </main>
-
-  <footer>
-    <p>© 2025 CyberTrek</p>
-  </footer>
+        
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm <strong>Derek Welski</strong>. I am passionate about building safer, more accountable AI systems by connecting emerging technology with the human layer of AI security and AI governance. My career has taken me from field research in Kosovo to ad tech, and I hope that this broad perspective makes my content more relatable and accessible.
+        </p>
+        
+        <img src="assets/about-derek.png" alt="Derek Welski" loading="lazy" 
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+        <div class="image-placeholder" style="display:none;">
+            📸 Derek Welski
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 CyberTrek | Built with <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </footer>
 </body>
 </html>
